@@ -10,8 +10,9 @@ PRECISO FAZER (front-end):
 1- página de configurações
 2- página de resumo
 3- fazer css dos modal de cadastar veiculos/posto/rota
-4- fazer modal de edição
-5- fazer dark mode
+4- fix topbar no topo
+5- fazer modal de edição
+6- fazer dark mode
 
 PRECISO FAZER (back-end):
 1- fazer banco de dados
