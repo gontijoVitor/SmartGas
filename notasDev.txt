@@ -1,0 +1,27 @@
+NOTAS
+Preciso colocar os modal's da página da calculadora na seguinte pasta:
+
+Caminho:
+D:\Vitor\Desktop\smart-gas\src\components\common
+
+####################
+
+PRECISO FAZER (front-end):
+1- página de configurações
+2- página de resumo
+3- fazer css dos modal de cadastar veiculos/posto/rota
+4- fazer modal de edição
+5- fazer dark mode
+
+PRECISO FAZER (back-end):
+1- fazer banco de dados
+2- fazer trabalhar com node
+3- tentar sincronizar ambos
+4- testar cadastro de rotas e postos
+5- testar cadastro de usuarios
+6- fazer sistema de clique dos botões de cadastro
+7- testar login
+
+Pós apresentação:
+Fazer README e .gitignore
+Publicar no GIT
