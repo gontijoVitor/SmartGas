@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ModalAddPosto = ({ show, onClose, onSubmit }) => {
+const ModalCustoViagem = ({ show, onClose, totalCost }) => {
     if (!show) return null;
 
     return (
@@ -9,4 +9,4 @@ const ModalAddPosto = ({ show, onClose, onSubmit }) => {
     );
 };
 
-export default ModalAddPosto;
+export default ModalCustoViagem;

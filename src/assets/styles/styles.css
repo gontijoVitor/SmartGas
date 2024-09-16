@@ -1,0 +1,36 @@
+.confirma{
+    background-color: #D10000;
+    color: whitesmoke;
+    border-radius: 10px;
+    border: 0;
+    padding: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+.cancela{
+    background-color: #B6B6B6;
+    color: whitesmoke;
+    border-radius: 10px;
+    border: 0;
+    padding: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Estilo normal do checkbox */
+.idaVolta[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    accent-color: #D10000; /* Cor personalizada para o checkbox */
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+/* Estilo quando o checkbox está marcado */
+.idaVolta[type="checkbox"]:checked {
+    accent-color: #D10000; /* Cor do checkbox ao ser clicado (marcado) */
+}

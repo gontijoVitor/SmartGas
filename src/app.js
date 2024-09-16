@@ -12,11 +12,14 @@ import Resumo from '../src/pages/resumo';
 import Sobre from '../src/pages/sobre';
 import Login from '../src/pages/user_login';
 import Cadastro from '../src/pages/user_cadastro';
+import Bottombar from './components/bottombar';
 
 function App() {
+
   return (
+    
     <div>
-      <Topbar />
+      <Topbar/>
         <Routes>
             <Route path="/" element={<Home />} /> 
             <Route path="/calculadora" element={<Calculadora />} />
@@ -26,6 +29,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/cadastro" element={<Cadastro />} />
         </Routes>
+        <Bottombar/>
     </div>
   );
 }
