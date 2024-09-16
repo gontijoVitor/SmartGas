@@ -2,8 +2,12 @@ import '../assets/imports';
 import imgSobre from '../assets/img/common/pagina_sobre.png';
 
 function Sobre() {
+    const py = {
+        paddingTop: '100px',
+        paddingBottom: '25px',
+      };
     return (
-        <div className="container">
+        <div className="container" style={py}>
             <div className="row px-4 pb-4">
                 <div className="mx-auto shadow-lg bg-body rounded row mt-4 col-xl-9 col-lg-9 col-md-8 col-sm-10 col-xs-11 p-4">
                     <h3 className='text-center mx-auto mt-4'><b>SOBRE</b></h3>

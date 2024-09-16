@@ -4,9 +4,12 @@ import img1 from '../assets/img/common/img_home_1.png';
 import img2 from '../assets/img/common/img_home_2.png';
 
 function Home() {
-
+    const py = {
+        paddingTop: '100px',
+        paddingBottom: '25px',
+      };
     return (
-        <div className="container">
+        <div className="container" style={py}>
             <div className="row px-4 pb-4">
                 <div className="mx-auto shadow-lg bg-body rounded p-4 mt-4 col-xl-9 col-lg-9 col-md-8 col-sm-10 col-xs-11">
                     <div className="d-flex justify-content-center mb-4">

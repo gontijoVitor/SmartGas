@@ -8,8 +8,12 @@ function Login() {
   const vrStyle = {
     height: "200px",
   };
+  const pTop = {
+    paddingTop: '100px',
+  };
 
   return (
+    <div style={pTop}>
       <div className='mx-auto shadow-lg bg-body rounded row mt-4 col-9 col-md-5 p-4'>
         <div className="d-flex col-5" style={vrStyle}>
           <img src={Logo} alt='Imagem indisponível :(' className="mx-auto d-block h-75 my-auto"></img>
@@ -27,11 +31,12 @@ function Login() {
             <label for="floatingPassword">Senha</label>
           </div>
           <div class="mx-auto mb-3">
-            <button className="rounded border-0 bg-danger text-white p-2 col-12" type="submit">Entrar</button>
+            <button className="confirma col-12" type="submit">Entrar</button>
             <Link to="/cadastro"><p className='text-center p-3'>Não possui conta?</p></Link>
           </div>
         </form>
       </div>
+    </div>
   );
 }
 
