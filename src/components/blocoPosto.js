@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import '../assets/imports';
 
+// Função de clique no bloco (Responsável por adicionar o valor do bloco no campo da calculadora)
 function BlocoPosto({ onGasPriceClick }) {
     const [showEditModal, setShowEditModal] = useState(false);
     const valorCombustivelRef = useRef(null);
@@ -26,14 +27,10 @@ function BlocoPosto({ onGasPriceClick }) {
                         <p className='mb-1 col-1' id='valorCombustivel' ref={valorCombustivelRef}>5,96</p>
                     </div>
                 </div>
-                <i 
-                    className="fa-solid fa-pen-to-square fa-lg col-auto p-1" 
-                    onClick={handleOpenEditModal} 
-                    style={{ cursor: 'pointer' }}
-                />
+                <i className="fa-solid fa-pen-to-square fa-lg col-auto p-1" onClick={handleOpenEditModal} style={{ cursor: 'pointer' }} />
             </div>
 
-            {/* Modal for Editing Posto */}
+            {/* Modal para editar posto */}
             {showEditModal && (
                 <>
                     <div className="modal-backdrop fade show"></div>

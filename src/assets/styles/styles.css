@@ -34,3 +34,7 @@
 .idaVolta[type="checkbox"]:checked {
     accent-color: #D10000; /* Cor do checkbox ao ser clicado (marcado) */
 }
+
+.pointer {
+    cursor: pointer;
+  }

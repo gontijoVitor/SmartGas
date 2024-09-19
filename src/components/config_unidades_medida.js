@@ -1,10 +1,10 @@
-import BottomConfig from "../components/bottom_config";
+// Página para configurar unidades de medida no site, localizada na página de configurações
 
 function Conf_uni_med() {
     return (
-        <>
-            <div className='mx-auto shadow-lg bg-body rounded row mt-4 col-10 col-sm-9 p-4'>
-                <h3 className='text-center m-0'><b>Unidades de medida</b></h3>
+        <div className='row'>
+            <div className='d-flex flex-row-reverse position-fixed end-0 shadow-lg bg-body rounded row mt-4 me-5 col-10 col-sm-9 px-5 py-4'>
+                <h3 className='m-2 mb-4'><b>Unidades de medida</b></h3>
                 <label for="uni-medidas" class="form-label">Unidade de distância</label>
                 <select type='select' class="form-control" id="uni-medidas">
                     <option value='1'>KM</option>
@@ -20,10 +20,10 @@ function Conf_uni_med() {
                     <option value='1'>R$/L</option>
                     <option value='2'>$/G</option>
                 </select>
-                <button className="confirma w-75 mx-auto m-4" type='submit'>Realizar conversão de valores no DB</button>
+                <button className="confirma w-25 mx-auto m-4" type='submit'>Salvar alterações</button>
+                <button className="cancela w-25 mx-auto m-4" type='submit'>Realizar conversão de valores no DB</button>
             </div>
-            <BottomConfig/>
-        </>
+        </div>
     );
   }
   

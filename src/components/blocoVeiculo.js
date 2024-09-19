@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import veiculo from '../assets/img/vehicle/Toyota-Corolla-2024.jpg';
 import '../assets/imports';
 
+// Função de clique no bloco (Responsável por adicionar o valor do bloco no campo da calculadora)
 function BlocoVeiculo({ onVehicleClick }) {
     const [showEditModal, setShowEditModal] = useState(false);
     const valorConsumoRef = useRef(null);
@@ -36,7 +37,7 @@ function BlocoVeiculo({ onVehicleClick }) {
                 <i className="fa-solid fa-pen-to-square fa-lg ms-auto p-1" onClick={handleOpenEditModal} style={{ cursor: 'pointer' }}/>
             </div>
 
-            {/* Modal for Editing Vehicle */}
+            {/* Modal para editar o veículo */}
             {showEditModal && (
                 <>
                     <div className="modal-backdrop fade show"></div>

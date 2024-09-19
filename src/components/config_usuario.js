@@ -1,5 +1,6 @@
+// Página de configuração de usuários  localizada na página de configurações
+
 import Pfp from '../assets/img/profile/pfp.jpg';
-import BottomConfig from "../components/bottom_config";
 
 function Conf_usuario() {
 
@@ -11,11 +12,11 @@ function Conf_usuario() {
   };
 
     return (
-      <>
-        <div className='mx-auto shadow-lg bg-body rounded row mt-4 col-10 col-sm-9 p-4'>
-        <h3 className='text-center m-2 mb-4 mx-auto'><b>Editar usuário</b></h3>
+      <div className='row'>
+        <div className='d-flex flex-row-reverse position-fixed end-0 shadow-lg bg-body rounded row mt-4 me-5 col-10 col-sm-9  px-5 py-4'>
+        <h3 className=' m-2 mb-4'><b>Editar usuário</b></h3>
 
-          <div className="col-5 align-self-center"> {/* alinhar essa porra no centro verticalmente*/}
+          <div className="col-5 align-self-center">
               <img src={Pfp} alt='Imagem indisponível :(' className="mx-auto d-block h-50" style={imgStyle}/><br/>
               <button className="confirma col-9 m-2 mx-auto d-block">Alterar foto</button>
               <button className="cancela col-9 m-2 mx-auto d-block">Remover foto</button>
@@ -52,8 +53,7 @@ function Conf_usuario() {
           </form>
           
         </div>
-        <BottomConfig/>
-      </>
+      </div>
     );
   }
   

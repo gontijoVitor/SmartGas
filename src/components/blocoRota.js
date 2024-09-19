@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import '../assets/imports';
 
+// Função de clique no bloco (Responsável por adicionar o valor do bloco no campo da calculadora)
 function BlocoRota({ onRouteClick }) {
     const [showEditModal, setShowEditModal] = useState(false);
     const valorDistanciaRef = useRef(null);
@@ -20,20 +21,16 @@ function BlocoRota({ onRouteClick }) {
             <div className='mx-auto p-2 rounded row border align-items-center my-2' onClick={handleRouteClick}>
                 <i className="fa-solid fa-map-location-dot fa-xl col-auto"/>
                 <div className='col'>
-                    <h5>Rota 1</h5>
+                    <h5>Casa - Trabalho</h5>
                     <div className='row'>
-                        <p className='mb-1 col-1' id='valorDistancia' ref={valorDistanciaRef}>7</p>
+                        <p className='mb-1 col-1' id='valorDistancia' ref={valorDistanciaRef}>8</p>
                         <p className='mb-1 col-1'>KM</p>
                     </div>
                 </div>
-                <i 
-                    className="fa-solid fa-pen-to-square fa-lg col-auto p-1" 
-                    onClick={handleOpenEditModal} 
-                    style={{ cursor: 'pointer' }}
-                />
+                <i className="fa-solid fa-pen-to-square fa-lg col-auto p-1" onClick={handleOpenEditModal} style={{ cursor: 'pointer' }} />
             </div>
 
-            {/* Modal for Editing Rota */}
+            {/* Modal para editar Rota */}
             {showEditModal && (
                 <>
                     <div className="modal-backdrop fade show"></div>
