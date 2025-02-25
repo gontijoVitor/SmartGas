@@ -5,15 +5,27 @@ O **SmartGas** é uma aplicação web desenvolvida para ajudar usuários a calcu
 ---
 
 ## **Índice**  
+- [Imagens do Projeto](#imagens-do-projeto)  
 - [Recursos](#recursos)  
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)  
 - [Estrutura do Projeto](#estrutura-do-projeto)  
+- [Modelo de Banco de Dados](#modelo-de-banco-de-dados)  
+- [Documentação da API](#documentação-da-api)  
 - [Instalação](#instalação)  
 - [Configuração](#configuração)  
-- [Documentação da API](#documentação-da-api)  
-- [Modelo de Banco de Dados](#modelo-de-banco-de-dados)  
 - [Componentes](#componentes)  
-- [Capturas de Tela](#capturas-de-tela)  
+- [Contribuição](#contribuição)  
+
+---
+
+## **Imagens do Projeto**  
+![Home](gitimages/Screenshot%20From%202025-02-12%2020-18-32.png)  
+
+![Calculadora](gitimages/Screenshot%20From%202025-02-12%2020-19-20.png)  
+
+![Resumo](gitimages/Screenshot%20From%202025-02-12%2020-19-33.png)  
+
+![Sobre](gitimages/Screenshot%20From%202025-02-12%2020-18-50.png)  
 
 ---
 
@@ -67,43 +79,15 @@ O **SmartGas** é uma aplicação web desenvolvida para ajudar usuários a calcu
 
 ---
 
-## **Instalação**  
+## **Modelo de Banco de Dados**  
 
-1. Clone o repositório:  
-```bash
-git clone [repository-url]
-```
-
-2. Instale as dependências:  
-```bash
-npm install
-```
-
-3. Configure o banco de dados:  
-- Crie um banco de dados MySQL  
-- Importe o esquema do arquivo `smart-gas.sql`  
-- Atualize as credenciais no arquivo `db.js`  
-
-4. Inicie os servidores de desenvolvimento:  
-```bash
-npm run backend  
-npm run dev  
-```
-
----
-
-## **Configuração**  
-**Configuração do Banco de Dados**  
-- Arquivo: `db.js`  
-
-```javascript
-{
-  host: 'localhost',
-  user: '[username]',
-  password: '[password]',
-  database: 'smartgas'
-}
-```
+**Tabelas:**  
+- `Usuario` - Informações dos usuários  
+- `Veiculo` - Dados dos veículos  
+- `Posto` - Informações dos postos de combustíveis  
+- `Rota` - Detalhes das rotas  
+- `Resumo` - Resumos de custos  
+- `Configuracoes` - Configurações dos usuários  
 
 ---
 
@@ -140,14 +124,44 @@ npm run dev
 
 ---
 
-## **Modelo de Banco de Dados**  
-**Tabelas:**  
-- `Usuario` - Informações dos usuários  
-- `Veiculo` - Dados dos veículos  
-- `Posto` - Informações dos postos de combustíveis  
-- `Rota` - Detalhes das rotas  
-- `Resumo` - Resumos de custos  
-- `Configuracoes` - Configurações dos usuários  
+## **Instalação**  
+
+1. Clone o repositório:  
+```bash
+git clone [repository-url]
+```
+
+2. Instale as dependências:  
+```bash
+npm install
+```
+
+3. Configure o banco de dados:  
+- Crie um banco de dados MySQL  
+- Importe o esquema do arquivo `smart-gas.sql`  
+- Atualize as credenciais no arquivo `db.js`  
+
+4. Inicie os servidores de desenvolvimento:  
+```bash
+npm run backend  
+npm run dev  
+```
+
+---
+
+## **Configuração**  
+
+### **Configuração do Banco de Dados**  
+- Arquivo: `db.js`  
+
+```javascript
+{
+  host: 'localhost',
+  user: '[username]',
+  password: '[password]',
+  database: 'smartgas'
+}
+```
 
 ---
 
@@ -171,4 +185,4 @@ npm run dev
 2. Crie uma branch para a feature  
 3. Realize os commits das mudanças  
 4. Envie para a branch  
-5. Abra um Pull Request 
+5. Abra um Pull Request  
