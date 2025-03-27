@@ -16,7 +16,7 @@ function Home() {
     return (
         <div className="container" style={py}>
             <div className="row px-4 pb-4">
-                <div className="mx-auto shadow-lg bg-body rounded p-4 mt-4 col-xl-9 col-lg-9 col-md-8 col-sm-10 col-xs-11">
+                <div className="mx-auto shadow-lg bg-body rounded p-4 mt-4 col-xl-9 col-lg-10 col-md-10 col-sm-11 col-xs-11">
                     <div className="d-flex justify-content-center mb-4">
                         <img
                             src={Logo}
@@ -36,8 +36,6 @@ function Home() {
                     <div className="d-flex justify-content-center m-5">
                         <div className="image-container">
                             <img src={img1} className="img-fluid" alt="Imagem indisponível :(" />
-                            <div className="red-border top-left"></div>
-                            <div className="red-border bottom-right"></div>
                         </div>
                     </div>
                     <p className="text-center p-4">
@@ -49,8 +47,6 @@ function Home() {
                     <div className="d-flex justify-content-center m-5">
                         <div className="image-container">
                             <img src={img2} className="img-fluid" alt="Imagem indisponível :(" />
-                            <div className="red-border top-left"></div>
-                            <div className="red-border bottom-right"></div>
                         </div>
                     </div>
                 </div>

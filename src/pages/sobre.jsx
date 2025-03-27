@@ -14,7 +14,7 @@ function Sobre() {
     return (
         <div className="container" style={py}>
             <div className="row px-4 pb-4">
-                <div className="mx-auto shadow-lg bg-body rounded row mt-4 col-xl-9 col-lg-9 col-md-8 col-sm-10 col-xs-11 p-4">
+                <div className="mx-auto shadow-lg bg-body rounded p-4 mt-4 col-xl-9 col-lg-10 col-md-10 col-sm-11 col-xs-11">
                     <h3 className="text-center mx-auto mt-4">
                         <b>SOBRE</b>
                     </h3>
@@ -25,8 +25,6 @@ function Sobre() {
                     <div className="d-flex justify-content-center my-4">
                         <div className="image-container">
                             <img src={imgSobre} alt="Imagem indisponível :(" className="img-fluid" />
-                            <div className="red-border top-left"></div>
-                            <div className="red-border bottom-right"></div>
                         </div>
                     </div>
                     <p className="text-center p-4">

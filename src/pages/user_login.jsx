@@ -49,7 +49,7 @@ function Login() {
 
     return (
         <div style={pTop}>
-            <div className="mx-auto shadow-lg bg-body rounded row mt-4 col-9 col-md-5 p-4">
+            <div className="mx-auto shadow-lg bg-body rounded row mt-4 col-12 col-lg-5 col-md-10 col-sm-10 col-xs-12 p-4">
                 <div className="d-flex col mx-auto" style={vrStyle}>
                     <img src={Logo} alt="Imagem indisponível :(" className="mx-auto d-block h-75 my-auto" />
                 </div>

@@ -50,15 +50,15 @@ function Cadastro() {
 
   return (
     <div style={pTop}>
-      <div className="mx-auto shadow-lg bg-body rounded row mt-4 col-9 col-md-5 p-4">
+      <div className="mx-auto shadow-lg bg-body rounded row mt-4 col-12 col-lg-5 col-md-10 col-sm-10 col-xs-12 p-4">
         <div className="d-flex col mx-auto" style={vrStyle}>
-          <img src={Logo} alt="Imagem indisponível" className="mx-auto d-block h-75 my-auto" />
+          <img src={Logo} alt="Imagem indisponível :(" className="mx-auto d-block h-75 my-auto" />
         </div>
         <div className="d-md-flex d-none col-1" style={vrStyle}>
           <div className="vr mx-auto" />
         </div>
         <form className="col" onSubmit={handleSubmit}>
-          <div className="mx-auto form-floating mb-3">
+          <div className="form-floating mb-3">
             <input
               type="text"
               className="form-control"
@@ -71,7 +71,7 @@ function Cadastro() {
             />
             <label htmlFor="usuario_user">Usuário</label>
           </div>
-          <div className="mx-auto form-floating mb-3">
+          <div className="form-floating mb-3">
             <input
               type="email"
               className="form-control"
@@ -84,7 +84,7 @@ function Cadastro() {
             />
             <label htmlFor="usuario_email">Email</label>
           </div>
-          <div className="mx-auto form-floating mb-3">
+          <div className="form-floating mb-3">
             <input
               type="password"
               className="form-control"
@@ -96,7 +96,7 @@ function Cadastro() {
             />
             <label htmlFor="usuario_senha">Senha</label>
           </div>
-          <div className="mx-auto form-floating mb-3">
+          <div className="form-floating mb-3">
             <input
               type="password"
               className="form-control"
@@ -108,12 +108,10 @@ function Cadastro() {
             />
             <label htmlFor="confirmaSenha">Confirme sua senha</label>
           </div>
-          <button className="confirma col-12" type="submit">
-            Cadastrar
-          </button>
-          <Link to="/login">
-            <p className="text-center p-3">Já possui uma conta? Faça login</p>
-          </Link>
+          <div className="mb-3">
+            <button className="confirma col-12" type="submit">Cadastrar</button>
+            <Link to="/login"><p className="text-center p-3">Já possui uma conta? Faça login</p></Link>
+          </div>
         </form>
       </div>
     </div>
