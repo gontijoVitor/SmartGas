@@ -9,14 +9,14 @@ O **SmartGas** é uma aplicação web desenvolvida para ajudar usuários a calcu
 ### 🖼️ Interface Inicial
 ![Interface Inicial](gitimages/Screenshot%20From%202025-02-12%2020-18-32.png)
 
-### 🛻 Cadastro de Veículo
-![Cadastro de Veículo](gitimages/Screenshot%20From%202025-02-12%2020-18-50.png)
-
-### 📊 Visualização de Resumo
-![Visualização de Resumo](gitimages/Screenshot%20From%202025-02-12%2020-19-20.png)
+### 📊 Página da calculadora
+![Página da calculadora](gitimages/Screenshot%20From%202025-02-12%2020-19-20.png)
 
 ### 📈 Gráfico de Consumo
 ![Gráfico de Consumo](gitimages/Screenshot%20From%202025-02-12%2020-19-33.png)
+
+### 🛻 Página "Sobre"
+![Página Sobre](gitimages/Screenshot%20From%202025-02-12%2020-18-50.png)
 
 ---
 
