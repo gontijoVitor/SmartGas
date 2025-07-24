@@ -182,6 +182,28 @@ npm run dev
 
 ---
 
+## Corrigir
+
+1. Ao digitar alguma informação errada na tela de login, nada acontece
+2. hover no valor do combustivel (bloco posto) não fica com o cursor click, e no bloco rota também
+3. Melhorar design dos modal de todos os modal do site, e adicionar função de fechar modal com a tecla “esc”.
+4. Ao selecionar a função de calcular ida e volta, no modal do resultado deve explicitar que está sendo calculado o valor da ida e da volta.
+5. Eu lembro que havia um erro ocorrendo ao mudar uma coisa nas configurações, mas não me lembro o que é.
+
+## Responsivo
+
+1. Principalmente corrigir o tamanho das imagens nos menus
+2. Corrigir proporções no texto
+3. Fazer responsivo das configurações
+4. Fazer responsivo do cadastro e do login
+
+## Adicionar
+
+1. Adicionar animações na abertura e fechamento dos modal
+2. Criar um modal de “usuario cadastrado com sucesso” ao cadastrar novo usuario
+
+---
+
 ## **Contribuição**  
 1. Faça um fork do repositório  
 2. Crie uma branch para a feature  
