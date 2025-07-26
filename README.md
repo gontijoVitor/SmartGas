@@ -4,6 +4,22 @@ O **SmartGas** é uma aplicação web desenvolvida para ajudar usuários a calcu
 
 ---
 
+## **Capturas de Tela**
+
+### 🖼️ Interface Inicial
+![Interface Inicial](gitimages/Screenshot%20From%202025-02-12%2020-18-32.png)
+
+### 📊 Página da calculadora
+![Página da calculadora](gitimages/Screenshot%20From%202025-02-12%2020-19-20.png)
+
+### 📈 Gráfico de Consumo
+![Gráfico de Consumo](gitimages/Screenshot%20From%202025-02-12%2020-19-33.png)
+
+### 🛻 Página "Sobre"
+![Página Sobre](gitimages/Screenshot%20From%202025-02-12%2020-18-50.png)
+
+---
+
 ## **Índice**  
 - [Recursos](#recursos)  
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)  
@@ -13,7 +29,6 @@ O **SmartGas** é uma aplicação web desenvolvida para ajudar usuários a calcu
 - [Documentação da API](#documentação-da-api)  
 - [Modelo de Banco de Dados](#modelo-de-banco-de-dados)  
 - [Componentes](#componentes)  
-- [Capturas de Tela](#capturas-de-tela)  
 
 ---
 
@@ -163,22 +178,6 @@ npm run dev
 ### **Componentes de Layout**  
 - `Topbar` - Navegação e interface do usuário  
 - `ProtectedRoute` - Middleware para proteção de rotas  
-
----
-
-## **Capturas de Tela**
-
-### 🖼️ Interface Inicial
-![Interface Inicial](gitimages/Screenshot%20From%202025-02-12%2020-18-32.png)
-
-### 📊 Página da calculadora
-![Página da calculadora](gitimages/Screenshot%20From%202025-02-12%2020-19-20.png)
-
-### 📈 Gráfico de Consumo
-![Gráfico de Consumo](gitimages/Screenshot%20From%202025-02-12%2020-19-33.png)
-
-### 🛻 Página "Sobre"
-![Página Sobre](gitimages/Screenshot%20From%202025-02-12%2020-18-50.png)
 
 ---
 
