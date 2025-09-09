@@ -86,7 +86,7 @@ O **SmartGas** é uma aplicação web desenvolvida para ajudar usuários a calcu
 
 1. Clone o repositório:  
 ```bash
-git clone [repository-url]
+git clone https://github.com/gontijoVitor/SmartGas
 ```
 
 2. Instale as dependências:  
