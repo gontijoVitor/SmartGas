@@ -7,16 +7,28 @@ O **SmartGas** é uma aplicação web desenvolvida para ajudar usuários a calcu
 ## **Capturas de Tela**
 
 ### 🖼️ Interface Inicial
-![Interface Inicial](gitimages/Screenshot%20From%202025-02-12%2020-18-32.png)
+![Interface Inicial](gitimages/home.png)
 
 ### 📊 Página da calculadora
-![Página da calculadora](gitimages/Screenshot%20From%202025-02-12%2020-19-20.png)
+![Página da calculadora](gitimages/calculadora.png)
 
 ### 📈 Gráfico de Consumo
-![Gráfico de Consumo](gitimages/Screenshot%20From%202025-02-12%2020-19-33.png)
+![Gráfico de Consumo](gitimages/resumo.png)
 
 ### 🛻 Página "Sobre"
-![Página Sobre](gitimages/Screenshot%20From%202025-02-12%2020-18-50.png)
+![Página Sobre](gitimages/sobre.png)
+
+### 🛻 Página "Login"
+![Página de login](gitimages/login.png)
+
+### 🛻 Página "Cadastro"
+![Página de cadastro de usuário](gitimages/cadastro.png)
+
+### 🛻 Página "Configurações (Alterar senha)"
+![Página de configuração de senha](gitimages/config_altera_senha.png)
+
+### 🛻 Página "Configurações (Alterar unidades de medida)"
+![Página de configuração de unidade de medida](gitimages/config_altera_medida.png)
 
 ---
 
