@@ -35,6 +35,7 @@ function Login() {
                 });
             }
         } catch (err) {
+            alert("Erro ao realizar login: " + (err.response?.data?.message || err.message));
             setMessage({ 
                 text: err.response?.data?.message || 'Erro ao realizar login', 
                 type: 'error' 
