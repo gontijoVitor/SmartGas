@@ -108,11 +108,12 @@ function BlocoRota({ rota, onRouteClick, onUpdateRoute, onDeleteRoute }) {
             <div 
                 className='mx-auto p-2 rounded row border align-items-center my-2' 
                 onClick={handleRouteClick}
+                style={{ cursor: "pointer" }} 
             >
                 <i className="fa-solid fa-route fa-xl col-auto"/>
                 <div className='col d-flex flex-column align-items-center'>
                     <h5>{rota.rota_ponto_a} - {rota.rota_ponto_b}</h5>
-                    <div className='row justify-content-center'>
+                    <div className='row justify-content-center' >
                         <p className='mb-1 p-0 col-auto'>{rota.rota_distancia}</p>
                         <p className='mb-1 px-1 col-auto'>{distanceUnit}</p>
                     </div>

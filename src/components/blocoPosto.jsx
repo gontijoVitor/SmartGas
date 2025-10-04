@@ -126,7 +126,7 @@ function BlocoPosto({ posto, onGasPriceClick, onDeletePosto, onUpdatePosto, hide
                         {posto.posto_valor_gasolina && (
                             <div 
                                 className='col-3 m-1 text-center' 
-                                style={{ backgroundColor: '#d85a5a', color: 'white', padding: '5px', borderRadius: '5px', fontSize: '0.9em' }}
+                                style={{ backgroundColor: '#d85a5a', color: 'white', padding: '5px', borderRadius: '5px', fontSize: '0.9em', cursor: "pointer" }}
                                 onClick={() => handleFuelClick('gasolina')}
                             >
                             <p className='m-0'>{currency} {posto.posto_valor_gasolina}</p>
@@ -135,7 +135,7 @@ function BlocoPosto({ posto, onGasPriceClick, onDeletePosto, onUpdatePosto, hide
                         {posto.posto_valor_etanol && (
                             <div 
                                 className='col-3 m-1 text-center' 
-                                style={{ backgroundColor: '#3fb76e', color: 'white', padding: '5px', borderRadius: '5px', fontSize: '0.9em' }}
+                                style={{ backgroundColor: '#3fb76e', color: 'white', padding: '5px', borderRadius: '5px', fontSize: '0.9em', cursor: "pointer"  }}
                                 onClick={() => handleFuelClick('etanol')}
                             >
                             <p className='m-0'>{currency} {posto.posto_valor_etanol}</p>
@@ -144,7 +144,7 @@ function BlocoPosto({ posto, onGasPriceClick, onDeletePosto, onUpdatePosto, hide
                         {posto.posto_valor_diesel && (
                             <div 
                                 className='col-3 m-1 text-center' 
-                                style={{ backgroundColor: '#757575', color: 'white', padding: '5px', borderRadius: '5px', fontSize: '0.9em' }}
+                                style={{ backgroundColor: '#757575', color: 'white', padding: '5px', borderRadius: '5px', fontSize: '0.9em', cursor: "pointer"  }}
                                 onClick={() => handleFuelClick('diesel')}
                             >
                             <p className='m-0'>{currency} {posto.posto_valor_diesel}</p>
@@ -188,7 +188,7 @@ function BlocoPosto({ posto, onGasPriceClick, onDeletePosto, onUpdatePosto, hide
                                             />
                                         </div>
                                         <div className='d-flex justify-content-between'>
-                                            <div className="col-3">
+                                            <div className="col-3" >
                                                 <label htmlFor="posto_valor_gasolina" className="form-label">Gasolina</label>
                                                 <input 
                                                     type="number" 
