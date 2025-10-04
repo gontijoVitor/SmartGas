@@ -196,8 +196,8 @@ npm run dev
 ## Corrigir
 
 1. Ao digitar alguma informação errada na tela de login, nada acontece (feito)
-2. hover no valor do combustivel (bloco posto) não fica com o cursor click, e no bloco rota também
-3. Melhorar design dos modal de todos os modal do site, e adicionar função de fechar modal com a tecla “esc”.
+2. hover no valor do combustivel (bloco posto) não fica com o cursor click, e no bloco rota também (feito)
+3. Melhorar design de todos os modal do site, e adicionar função de fechar modal com a tecla “esc”.
 4. Ao selecionar a função de calcular ida e volta, no modal do resultado deve explicitar que está sendo calculado o valor da ida e da volta.
 5. Eu lembro que havia um erro ocorrendo ao mudar uma coisa nas configurações, mas não me lembro o que é.
 
