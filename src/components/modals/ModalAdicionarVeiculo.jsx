@@ -1,7 +1,6 @@
 // src/components/modals/ModalAdicionarVeiculo.jsx
 // Componente modal para adicionar um novo veículo
-
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const ModalAdicionarVeiculo = ({ onClose, onAddVehicle }) => {
     const [vehicleData, setVehicleData] = useState({
@@ -14,6 +13,21 @@ const ModalAdicionarVeiculo = ({ onClose, onAddVehicle }) => {
     });
     const [message, setMessage] = useState({ text: '', isSuccess: false });
 
+    // ✅ Fecha o modal ao apertar "Esc"
+    useEffect(() => {
+        const handleKeyDown = (e) => {
+            if (e.key === 'Escape') {
+                onClose();
+            }
+        };
+        document.addEventListener('keydown', handleKeyDown);
+
+        // Remove o listener ao desmontar o modal
+        return () => {
+            document.removeEventListener('keydown', handleKeyDown);
+        };
+    }, [onClose]);
+
     // Fecha o modal ao clicar no backdrop
     const handleBackdropClick = (e) => {
         if (e.target.className.includes('modal')) {
@@ -21,7 +35,6 @@ const ModalAdicionarVeiculo = ({ onClose, onAddVehicle }) => {
         }
     };
 
-    // Atualiza o estado ao alterar os campos do formulário
     const handleChange = (e) => {
         const { name, value } = e.target;
         setVehicleData(prevState => ({
@@ -30,7 +43,6 @@ const ModalAdicionarVeiculo = ({ onClose, onAddVehicle }) => {
         }));
     };
 
-    // Envia os dados do formulário para criar um novo veículo
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
@@ -46,7 +58,6 @@ const ModalAdicionarVeiculo = ({ onClose, onAddVehicle }) => {
             
             if (response.ok) {
                 setMessage({ text: 'Veículo criado com sucesso!', isSuccess: true });
-                // Cria objeto completo do veículo para atualizar o estado
                 const newVehicle = {
                     veiculo_id: data.insertId,
                     ...vehicleData
