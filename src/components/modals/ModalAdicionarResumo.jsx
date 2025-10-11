@@ -1,7 +1,7 @@
 // src/components/modals/ModalAdicionarResumo.jsx
 // Componente modal para adicionar um novo resumo de consumo
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const ModalAdicionarResumo = ({ onClose, onAddResumo }) => {
     const currentDate = new Date().toISOString().split('T')[0];
@@ -11,6 +11,21 @@ const ModalAdicionarResumo = ({ onClose, onAddResumo }) => {
     });
     const [message, setMessage] = useState({ text: '', isSuccess: false });
 
+    // ✅ Fecha o modal ao apertar "Esc"
+    useEffect(() => {
+        const handleKeyDown = (e) => {
+            if (e.key === 'Escape') {
+                onClose();
+            }
+        };
+        document.addEventListener('keydown', handleKeyDown);
+
+        // Remove o listener ao desmontar o modal
+        return () => {
+            document.removeEventListener('keydown', handleKeyDown);
+        };
+    }, [onClose]);
+    
     // Fecha o modal ao clicar no backdrop
     const handleBackdropClick = (e) => {
         if (e.target.className.includes('modal')) {

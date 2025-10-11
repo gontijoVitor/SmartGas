@@ -1,7 +1,7 @@
 // src/components/modals/ModalAdicionarRota.jsx
 // Componente modal para adicionar uma nova rota de viagem
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const ModalAdicionarRota = ({ onClose, onAddRoute }) => {
     const [routeData, setRouteData] = useState({
@@ -10,6 +10,20 @@ const ModalAdicionarRota = ({ onClose, onAddRoute }) => {
         distance: ''
     });
     const [message, setMessage] = useState({ text: '', isSuccess: false });
+
+    useEffect(() => {
+        const handleKeyDown = (e) => {
+            if (e.key === 'Escape') {
+                onClose();
+            }
+        };
+        document.addEventListener('keydown', handleKeyDown);
+
+        // Remove o listener ao desmontar o modal
+        return () => {
+            document.removeEventListener('keydown', handleKeyDown);
+        };
+    }, [onClose]);
 
     // Fecha o modal ao clicar no backdrop
     const handleBackdropClick = (e) => {

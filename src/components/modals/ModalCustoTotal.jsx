@@ -59,6 +59,21 @@ const ModalCustoTotal = ({ totalCost, onClose, userId }) => {
         }
     };
 
+    // ✅ Fecha o modal ao apertar "Esc"
+    useEffect(() => {
+        const handleKeyDown = (e) => {
+            if (e.key === 'Escape') {
+                onClose();
+            }
+        };
+        document.addEventListener('keydown', handleKeyDown);
+
+        // Remove o listener ao desmontar o modal
+        return () => {
+            document.removeEventListener('keydown', handleKeyDown);
+        };
+    }, [onClose]);
+
     return (
         <>
             <div className="modal-backdrop fade show" onClick={handleBackdropClick}></div>

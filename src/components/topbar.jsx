@@ -68,6 +68,10 @@ function Topbar() {
                                         <NavLink to="/configuracoes" className="dropdown-item px-3">Configurações</NavLink>
                                     </li>
                                     <li className="d-flex align-items-center p-2 px-3">
+                                        <i className="fa-solid fa-brush"></i>
+                                        <NavLink className="dropdown-item px-3">Alterar tema</NavLink>
+                                    </li>
+                                    <li className="d-flex align-items-center p-2 px-3">
                                         <i className="fa-solid fa-right-from-bracket"></i>
                                         <button onClick={handleLogout} className="dropdown-item px-3">Logout</button>
                                     </li>

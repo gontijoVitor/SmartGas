@@ -1,7 +1,7 @@
 // src/components/modals/ModalAdicionarPosto.jsx
 // Componente modal para adicionar um novo posto de combustível
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const ModalAdicionarPosto = ({ onClose, onAddPosto }) => {
     const [postoData, setPostoData] = useState({
@@ -11,6 +11,21 @@ const ModalAdicionarPosto = ({ onClose, onAddPosto }) => {
         priceDiesel: ''
     });
     const [message, setMessage] = useState({ text: '', isSuccess: false });
+
+    // ✅ Fecha o modal ao apertar "Esc"
+    useEffect(() => {
+        const handleKeyDown = (e) => {
+            if (e.key === 'Escape') {
+                onClose();
+            }
+        };
+        document.addEventListener('keydown', handleKeyDown);
+
+        // Remove o listener ao desmontar o modal
+        return () => {
+            document.removeEventListener('keydown', handleKeyDown);
+        };
+    }, [onClose]);
 
     // Fecha o modal ao clicar no backdrop
     const handleBackdropClick = (e) => {
