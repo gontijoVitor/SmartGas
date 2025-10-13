@@ -201,6 +201,7 @@ npm run dev
 4. Alterar importações do fontawesome
 5. Ao selecionar a função de calcular ida e volta, no modal do resultado deve explicitar que está sendo calculado o valor da ida e da volta.
 6. Eu lembro que havia um erro ocorrendo ao mudar uma coisa nas configurações, mas não me lembro o que é.
+7. Adicionar arquivo "not found". (Feito)
 
 ## Responsivo
 

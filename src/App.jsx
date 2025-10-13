@@ -11,6 +11,7 @@ import Resumo from './pages/resumo';
 import Sobre from './pages/sobre';
 import Login from './pages/user_login';
 import Cadastro from './pages/user_cadastro';
+import NotFound from './pages/notfound';
 
 import ProtectedRoute from './components/ProtectedRoute';
 
@@ -27,6 +28,7 @@ function App() {
           <Route path="/sobre" element={<Sobre />} />
           <Route path="/login" element={<Login />} />
           <Route path="/cadastro" element={<Cadastro />} />
+          <Route path="/*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </>
